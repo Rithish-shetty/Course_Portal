@@ -1,0 +1,132 @@
+.contact-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.8rem;
+  color: #002D62;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Section */
+.contact-form-section h2 {
+  font-size: 1.8rem;
+  color: #002D62;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #002D62;
+  box-shadow: 0 0 5px rgba(0, 45, 98, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #D4AF37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #b89a30;
+}
+
+/* Details Section */
+.contact-details-section {
+  background-color: #f4f7fc;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contact-details-section h2 {
+  font-size: 1.8rem;
+  color: #002D62;
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-list svg {
+  color: #002D62;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+.map-container {
+  margin-top: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .contact-body {
+    grid-template-columns: 1fr;
+  }
+}

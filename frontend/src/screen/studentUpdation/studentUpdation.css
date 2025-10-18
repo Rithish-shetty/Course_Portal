@@ -1,0 +1,111 @@
+.add-student-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-student-container h1 {
+  text-align: center;
+  color: #002D62;
+  margin-bottom: 30px;
+}
+
+.add-student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.add-student-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.add-student-form legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #002D62;
+  font-size: 1.2rem;
+}
+
+.student-details-fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.semesters-marks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.semester-marks-group {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.semester-marks-group h4 {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.submit-student-btn {
+  padding: 15px;
+  background-color: #002D62;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-student-btn:hover {
+  background-color: #004080;
+}
+
+@media (max-width: 600px) {
+  .student-details-fieldset {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ... (keep all your existing styles) ... */
+
+/* Update this rule to include the 'select' element */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff; /* Ensures select has a white background */
+}
+
+/* ... (the rest of your CSS remains the same) ... */

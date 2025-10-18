@@ -1,0 +1,81 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #002D62;
+}
+
+.profile-details h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  color: #002D62;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.profile-body h2 {
+  font-size: 1.8rem;
+  color: #002D62;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #D4AF37;
+  padding-bottom: 10px;
+}
+
+.semesters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.semester-card {
+  background-color: #f4f7fc;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 5px solid #002D62;
+}
+
+.semester-card h3 {
+  margin: 0 0 15px 0;
+  color: #002D62;
+  font-size: 1.4rem;
+}
+
+.semester-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.semester-card li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.gpa-highlight {
+  font-weight: bold;
+  color: #333;
+}

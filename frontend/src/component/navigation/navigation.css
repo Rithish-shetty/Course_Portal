@@ -1,0 +1,41 @@
+/* src/components/Navigation.css */
+
+.main-nav {
+  background-color: #002D62; /* Main navy blue from header */
+  padding: 12px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start; /* Aligns links to the left */
+  align-items: center;
+  gap: 40px; /* Space between links */
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the list container */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 4px;
+  border-bottom: 2px solid transparent; /* For the hover/active effect */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #D4AF37; /* Gold color from logo on hover */
+}
+
+/* This style is applied automatically by NavLink for the active page */
+.nav-links a.active {
+  color: #D4AF37; /* Gold color for the active link */
+  border-bottom-color: #D4AF37;
+  font-weight: 700;
+}

@@ -1,0 +1,85 @@
+.admin-support-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.admin-support-container h1 {
+  text-align: center;
+  color: #002D62;
+  margin-bottom: 10px;
+}
+
+.page-description {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticket-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-left: 5px solid #D4AF37;
+}
+
+.ticket-header {
+  margin-bottom: 15px;
+}
+
+.ticket-category {
+  background-color: #f4f7fc;
+  color: #002D62;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ticket-subject {
+  margin: 10px 0 0 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.ticket-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.done-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.done-button:hover {
+  background-color: #2ecc71;
+}
+
+.no-tickets-message {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #555;
+}
