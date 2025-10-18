@@ -13,7 +13,7 @@ const AdminLogin = () => {
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/adminLogin' , {name , password})
+        axios.post('https://course-portal-1-schk.onrender.com/adminLogin' , {name , password})
         .then(result => {
             console.log("result" , result.data)
             if(result.data === "success"){

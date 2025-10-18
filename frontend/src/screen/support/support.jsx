@@ -34,7 +34,7 @@ const Support = () => {
 
   const handleTicketSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/createSupportTicket', ticketData)
+    axios.post('https://course-portal-1-schk.onrender.com/createSupportTicket', ticketData)
   
     console.log("Support Ticket Submitted:", ticketData);
     alert("Your support ticket has been submitted successfully!");

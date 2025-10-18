@@ -12,7 +12,7 @@ const StudentLogin = () => {
 
     const Submit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/studentLogin' , {name , reg})
+        axios.post('https://course-portal-1-schk.onrender.com/studentLogin' , {name , reg})
         .then(result => {
             console.log("result" , result.data)
             if(result.data === "success"){

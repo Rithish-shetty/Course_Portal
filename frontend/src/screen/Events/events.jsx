@@ -11,7 +11,7 @@ const EventsPage = () => {
   const [events , setEvents] = useState([])
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getEvents`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getEvents`)
     .then(res => setEvents(res.data))
     .catch(err => console.log(err))
   } , [])

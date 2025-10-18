@@ -16,7 +16,7 @@ const StudentUpdation = () => {
   const {id} = useParams()
 
   useEffect(() => {
-        axios.get(`http://localhost:3001/studentUpdation/${id}`)
+        axios.get(`https://course-portal-1-schk.onrender.com/studentUpdation/${id}`)
         .then(response => {
             setId(response.data._id)
 

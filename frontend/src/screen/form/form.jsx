@@ -19,13 +19,13 @@ const Form = () => {
   const navigate = useNavigate();
 
     useEffect(() => {
-    axios.get(`http://localhost:3001/getCourse2/${id}`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getCourse2/${id}`)
     .then(res => setData(res.data))
     .catch(err => console.log(err))
   }, [id])
 
   const handleSubmit = (e) => {
-    axios.post('http://localhost:3001/createRegistration', {
+    axios.post('https://course-portal-1-schk.onrender.com/createRegistration', {
       name: name,
       number: number,
       email: email,

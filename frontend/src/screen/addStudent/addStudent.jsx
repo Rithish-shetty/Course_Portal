@@ -25,7 +25,7 @@ const AddStudentPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // In a real app, you would use FormData to send the text fields and the imageFile to your server
-    axios.post('http://localhost:3001/createUser', {
+    axios.post('https://course-portal-1-schk.onrender.com/createUser', {
       studentName: formData.studentName,
       registerNumber: formData.registerNumber,
       courseName: formData.courseName,

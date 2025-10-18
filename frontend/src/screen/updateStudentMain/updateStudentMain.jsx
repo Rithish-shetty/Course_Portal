@@ -9,7 +9,7 @@ const UpdateStudentMain = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/getStudents/${year}/${b}`)
+      .get(`https://course-portal-1-schk.onrender.com/getStudents/${year}/${b}`)
       .then((res) => {
         console.log("Fetched data:", res.data);
         setData(res.data);

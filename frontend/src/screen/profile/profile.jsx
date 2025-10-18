@@ -15,7 +15,7 @@ const ProfilePage = () => {
   console.log("st data" , data.S1t1)
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getStudent/${reg}`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getStudent/${reg}`)
     .then(res => setData(res.data) )
     .catch(err => console.log(err))
   }, [reg])

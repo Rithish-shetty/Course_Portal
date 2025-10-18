@@ -22,7 +22,7 @@ const AddCoursePage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/createCourse', formData)
+    axios.post('https://course-portal-1-schk.onrender.com/createCourse', formData)
     console.log("New Course Data:", formData);
     alert(`Course '${formData.courseName}' has been added successfully!`);
     // Reset form

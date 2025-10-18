@@ -15,8 +15,14 @@ const PORT = 3001;
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://localhost:27017/Portal')
+const MONGO_URI = "mongodb+srv://rithishsr77_db_user:rithishdb@cluster0.m38yfra.mongodb.net/Portal?retryWrites=true&w=majority&appName=Cluster0"
 
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB connected"))
+.catch(err => console.error("MongoDB connection error:", err));
 
 //this is for creating student
 app.post('/createUser', (req, res) => {

@@ -11,7 +11,7 @@ const CourseDetailPage = () => {
   const {id} = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getCourse2/${id}`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getCourse2/${id}`)
     .then(res => setData(res.data))
     .catch(err => console.log(err))
   }, [id])

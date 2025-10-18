@@ -7,13 +7,13 @@ const MessagesPage = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getForm`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getForm`)
     .then(res => setMessages(res.data))
     .catch(err => console.log(err))
   })
 
   const handleDelete = (messageId) => {
-    axios.delete(`http://localhost:3001/deleteForm/${messageId}`)
+    axios.delete(`https://course-portal-1-schk.onrender.com/deleteForm/${messageId}`)
     .then(() =>   setMessages(messages.filter(msg => msg.id !== messageId)))
     .catch(err => console.log(err) )
     

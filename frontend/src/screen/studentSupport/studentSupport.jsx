@@ -7,13 +7,13 @@ const AdminSupportPage = () => {
   const [tickets, setTickets] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getTicket`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getTicket`)
     .then(res => setTickets(res.data))
     .catch(err => console.log(err))
   })
 
   const handleMarkAsDone = (ticketId) => {
-    axios.delete(`http://localhost:3001/deleteTicket/${ticketId}`)
+    axios.delete(`https://course-portal-1-schk.onrender.com/deleteTicket/${ticketId}`)
       .then(() => setTickets(tickets.filter(ticket => ticket.id !== ticketId)))
       .catch(err => console.log(err))
   };

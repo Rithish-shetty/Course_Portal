@@ -18,7 +18,7 @@ const AddEventPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/createEvent', formData)
+    axios.post('https://course-portal-1-schk.onrender.com/createEvent', formData)
     console.log("New Event Data:", formData);
     alert(`Event '${formData.name}' has been created successfully!`);
     // Reset form

@@ -50,7 +50,7 @@ const CourseUpdation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:3001/courseUpdation/${id1}`, formData)
+    axios.put(`https://course-portal-1-schk.onrender.com/courseUpdation/${id1}`, formData)
     console.log("New Course Data:", formData);
     alert(`Course '${formData.courseName}' has been updated successfully!`);
     // Reset form

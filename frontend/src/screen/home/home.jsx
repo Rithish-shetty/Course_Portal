@@ -10,7 +10,7 @@ const Home = () => {
   const [announcements , setAnnouncements] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3001/getAnnouncements')
+    axios.get('https://course-portal-1-schk.onrender.com/getAnnouncements')
     .then(res => setAnnouncements(res.data) )
     .catch(err => console.log(err))
   } , [])

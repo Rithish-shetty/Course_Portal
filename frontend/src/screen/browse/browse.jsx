@@ -10,7 +10,7 @@ const Browse = () => {
   const [data , setData] = useState([])
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/getCourse`)
+    axios.get(`https://course-portal-1-schk.onrender.com/getCourse`)
     .then(res => setData(res.data))
     .catch(err => {console.log(err)})
   })
