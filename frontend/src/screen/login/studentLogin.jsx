@@ -29,7 +29,7 @@ const StudentLogin = () => {
     return (
         <div className="login-container">
             <div className="login-card">   
-            <h2 className="login-title">Admin Login Page</h2>
+            <h2 className="login-title">Student Login Page</h2>
         <form onSubmit={Submit} className="login-form">
 
             <div className="form-group">
