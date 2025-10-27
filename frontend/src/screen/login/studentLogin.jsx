@@ -25,7 +25,7 @@ const StudentLogin = () => {
         })
         .catch(err => console.log(err))
     }
-
+ 
     return (
         <div className="login-container">
             <div className="login-card">   

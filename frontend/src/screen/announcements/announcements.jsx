@@ -26,7 +26,7 @@ const AnnouncementsPage = () => {
       return;
     }
 
-    axios.post('http://localhost:3001/createAnnouncement', {
+    axios.post('https://course-portal-1-schk.onrender.com/createAnnouncement', {
       date: newAnnouncement.date,
       announcement: newAnnouncement.text
     }).then(response => {
@@ -44,7 +44,7 @@ const AnnouncementsPage = () => {
   };
 
 const handleDelete = (id) => {
-    axios.delete(`http://localhost:3001/deleteAnnouncement/${id}`)
+    axios.delete(`https://course-portal-1-schk.onrender.com/deleteAnnouncement/${id}`)
       .then(() => {
         setAnnouncements(prev => prev.filter(ann => ann._id !== id));
       })
