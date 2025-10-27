@@ -18,7 +18,7 @@ const AdminHomePage = () => {
   return (
     <div>
       <Header to="/" buttonName="Home Page" />
-      <Navigation />
+      {/* <Navigation /> */}
     <div className="admin-home-container">
       <h1>Admin Control Panel</h1>
       <div className="admin-grid">
